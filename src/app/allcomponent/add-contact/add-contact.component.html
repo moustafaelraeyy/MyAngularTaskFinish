@@ -1,0 +1,43 @@
+<div class="sign text-center">
+    <div class="container">
+        <h2>Add A New Contact</h2>
+        <img src="/assets/images.png">
+
+
+
+        <form #fff="ngForm" (ngSubmit)="creat(fff)" >
+
+            <input ngModel name="Firstname" #Fname="ngModel" type="text" class="form-control" placeholder="FirstName"
+                required>
+            <div class="alert alert-danger" *ngIf="Fname.touched && Fname.errors?.required ">FirstName Is Required</div>
+            <input ngModel name="Lastname" #Lname="ngModel" type="text" class="form-control" placeholder="LastName"
+                required>
+            <div class="alert alert-danger" *ngIf="Lname.touched && Lname.errors?.required ">LastName Is Required</div>
+            <input ngModel name="email" #email="ngModel" type="email" class="form-control" placeholder="email" required
+                email>
+            <div class="alert alert-danger" *ngIf="email.touched && email.errors?.required ">Email Is Required</div>
+            <div class="alert alert-danger" *ngIf="email.touched && email.errors?.email">Email dosent contain Email
+                Structure</div>
+
+
+
+            <input ngModel name="phone" #phone="ngModel" type="tel" pattern="[0-9]{11}" title="Mobile Number"
+                class="form-control" placeholder="Phone" required minlength="11" maxlength="11">
+            <div class="alert alert-danger" *ngIf="phone.touched && phone.errors?.required ">Phone Is Required</div>
+            <div class="alert alert-danger" *ngIf="phone.touched && phone.errors?.minlength ">Must Be 11 number</div>
+            <div class="alert alert-danger" *ngIf="phone.touched && phone.errors?.maxlength ">Must Be 11 number</div>
+
+
+
+            <button [disabled]="fff.invalid" class="btn btn-success"  >Add Contact</button>
+            <br>
+
+
+
+        </form>
+        <button class="bb" (click)="gotolist()">Cancel</button>
+
+
+    </div>
+    
+</div>

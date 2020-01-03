@@ -1,0 +1,34 @@
+
+.sign{
+    padding:40px;
+}
+.sign img{
+    width: 200px;
+    margin-top: 10px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+
+.sign button{
+    margin-bottom:10px;
+    width:140px
+}
+.sign .bb{
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 0px;
+}
+
+
+form input{
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.sign h2{
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

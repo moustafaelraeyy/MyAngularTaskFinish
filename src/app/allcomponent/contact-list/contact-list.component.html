@@ -1,0 +1,19 @@
+<section class="list">
+    <div class="container">
+        <div class="style">
+            <input type="search" [(ngModel)]="searchText" placeholder=" Search Contacts" class="form-control ">
+        </div>
+        <h4>Add New Contact</h4>
+        <button class="btn btn-primary" (click)="backtoform()">
+            <i class="fa fa-plus"></i>
+            Add
+        </button>
+
+        <ul *ngFor="let x of htmlData | filter : searchText : 'firstName'" class="list-unstyled">
+            <li>{{x.firstName}}</li>
+
+            <li>{{x.email}}</li>
+
+        </ul>
+    </div>
+</section>

@@ -1,0 +1,46 @@
+.list{
+    padding: 20px;
+}
+input{
+    border-radius: 20px;
+        padding: 20px;
+
+}
+.list .style{
+    border: 10px solid #c0e3e7;
+    border-radius: 30px;
+}
+
+.list h4{
+    display: inline-block;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 30px
+    
+    
+}
+.list button{
+border: none;
+float: right;
+margin-top: 10px;
+
+
+}
+.list ul  {
+    border: 1px solid #DDD;
+    border-radius: 30px;
+    box-shadow: 2px 5px 5px 3px rgba(31, 51, 73, 0.1);
+    padding:20px;
+    background: #c0e3e7;;
+    font-weight: 600;
+
+}
+
+.list ul li:first-child{
+    font-size: 20px;
+}
+.list ul li:last-child{
+    font-size: 12px;
+    
+
+}
